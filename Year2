@@ -1,0 +1,29 @@
+package jan_27_2;
+
+import java.util.Scanner;
+
+public class Year2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter days");
+		int days=sc.nextInt();
+
+		int year=days/365;
+		System.out.println("year "+year);
+
+
+		int month =days%365/30;
+		System.out.println("month "+month);
+
+		int week=((days%365)%30)/7;
+		System.out.println("Week" +week);
+		int Days=week/7;
+		System.out.println("Days "+Days);
+
+		int rem4=Days%24;
+		System.out.println("Hour "+rem4);
+	}
+
+}
